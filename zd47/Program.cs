@@ -14,7 +14,7 @@ float [,] matrix=new float [rows,columns];
 Console.WriteLine("Сформированный массив:");
 for(int i=0; i<matrix.GetLength(0); i++)
 {
-    for(int j=0; j<matrix.GetLength(0); j++)
+    for(int j=0; j<matrix.GetLength(1); j++)
     {
     matrix[i,j]= new Random().Next(0,10);
     matrix[i,j]= matrix[i,j] / new Random().Next(1,10);
